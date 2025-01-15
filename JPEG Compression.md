@@ -28,7 +28,10 @@ The image is typically transformed from RGB color space to YCbCr. This transform
 This separation helps compressing the chrominance components more heavily since the human eye is less sensitive to color details than brightness.
 
 ## The Discrete Cosine Transform (DCT)
-**DCT** Discrete Cosine Transform (DCT) applied to 8x8 blocks in the JPEG algorithm. It converts spatial-domain pixel values into frequency-domain coefficients. The higher frequencies, which correspind to fine details are typically quantized more aggressively, leading to compression.
+**DCT** Discrete Cosine Transform (DCT) transforms spatial data (pixel intensity values) into frequency data, applied to 8x8 blocks in the JPEG algorithm. It converts spatial-domain pixel values into frequency-domain coefficients. The higher frequencies, which correspind to fine details are typically quantized more aggressively, leading to compression.
+
+Just before DCT we subtract 128 from each pixel value for each channel to make the value range from -128 to 127, this helps for the DCT cause it is more effective when working with values centered around zero. Centering helps achieve better energy compaction where the most of the image's energy is captured in the low-frequency DCT coefficients, since the DCT basis functions are symmteric around zero.
+Using DCT, for each channel, each block of 64 pixels can be reconstructed by multiplying a constant set of base images by their corresponding weight values and then summing them up together.
 
 ## Quantization
 Quantization reduces the precision of the DCT coefficients by dividing them element-wise by a predefined **quantization table** and rounding the results. This step introduces loss but essential for achieving significant compression.
