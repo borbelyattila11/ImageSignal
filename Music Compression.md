@@ -52,7 +52,7 @@ Refers to the time intervals before and after a louder sound during which quiete
 In **Audio Compression** masking windows are used to identify and remove inaudible sound components in formats like MP3 and AAC.
 
 ### The Bark Scale and Critical Bands
-The Bark Scale is a psychoacoustic scale that divides the audible spectrum (20Hz to 20kHz) into 24 critical bands based on the frequency regions that correspond to auditory fitlers in human hearing. These bands are non-linear and wider at higher frequencies while narrow for lower frequencies, since the human hearing is more sensitive to low-frequency (~500Hz) sounds.
+The Bark Scale is a psychoacoustic scale that divides the audible spectrum (20Hz to 20kHz) into 24 critical bands based on the frequency regions that correspond to auditory fitlers in human hearing. These bands are non-linear and wider at higher frequencies while narrow for lower frequencies, since the human hearing is more sensitive to low-frequency (~500Hz) sounds. Less than 100 Hz in the lower frequency regions and greater than 4kHz in the upper frequency regions.
 
 ### Steps of MPEG compression
 1. **Analysis and Filtering:** Split the audio signal into multiple frequency subbands using filter banks or transforms like Modified Discrete Cosine Transform (MDCT).
