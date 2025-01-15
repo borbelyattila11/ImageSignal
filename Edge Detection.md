@@ -47,7 +47,7 @@ Designed to identify significant edges, preserve them well and eliminate noise t
     - **Weak edges:** Pixel with gradient magnitudes between high and low tresholds are considered weak edges.
     - **Non-edges:** Pixels with gradient magnitudes below the low threshold are discarded.
 
-  The high and low tresholds are typically set as a percentage of the maximum gradient value in the image.
+    The high and low tresholds are typically set as a percentage of the maximum gradient value in the image.
 5. **Edge Tracking:** The final step is to link weak edges to strong edges based on their proximity. For each weak edge pixel, check if it connected to any strong edge pixels. If a weak edge pixel has at least one strong edge pixel as neighbor, it is kept as part of the edge. if a weak edge pixel is not connected to any strong edge pixel, it is discarded. It ensures that weak edges which are part of the actual object boundary are connected and included in the final edge map.
 
 ## The Hough-transform
