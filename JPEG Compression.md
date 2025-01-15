@@ -42,3 +42,7 @@ The quantization tables specify how much each frequency component should be scal
 
 ## Zig-Zag Ordering
 After quantization, the DCT coefficients are reordered using **zig-zag scanning**, it reorders the coefficients by starting at the top-left corner of the 8x8 block and moving in a zig-zag pattern, collecting the coefficients in the order of their frequency. This helps grouping low-frequency components (since they are more important) before high-frequency ones (they are discardables).
+
+The DCT compacts most of the energy of the image into the **low-frequency** components, which are located in the top-left corner of the DCT matrix. The **high-frequency** components are located in the bottom-right corner, typically contain much less energy and often become zero after quantization.
+
+By zig-zag ordering the coefficients the most important and non-zero values are placed first in teh sequence. This increases the efficiency of the entropy coding, because the long runs of zeros are grouped together at the end, making them easier to compress using run-length encoding (RLE).
