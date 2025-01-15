@@ -34,5 +34,19 @@ Combines Gaussian smoothing with the Laplacian operator. First it applies the Ga
 The algorithm's goal is to detect the **zero-crossings** of the LoG, which corresponds to the locations of edges in an image. First step of the algorithm is to apply LoG on the image. In addition to applying the LoG operator it focuses on detecting zero-crossings. May produce false edges.
 
 ## The Canny
+Designed to identify significant edges, preserve them well and eliminate noise that might interfere with the edge detection process.
+
+### Steps
+1. **Noise Reduction (Gaussian filtering):** Apply Gaussian smoothing to reduce noise and fine details. The image is convolved with a Gaussian kernel to blur the image. The amount of smoothing is controlled by the standard deviation (σ) of the Gaussian kernel.
+2. **Gradient Calculation (Edge Strength and Direction):** After smoothing compute the gradient magnitude and gradient direction of the image, this typically done by the Sobel operator.
+  - The **gradient magnitude** (G) at each pixel is calculated as the squared root of G_x and G_y, which will give the strength of the edge at each pixel.
+  - The **gradient direction** (θ) at each pixel is calculated as the atan2(G_y, G_x), which represents the orientation of the edge at that point.
+3. **Non-Maximum Suppression (Edge Thinning):** The goal is to thin out the edges by suppressing non-maximum values in the gradient magnitude image. Each pixel is examined along the direction of the gradient and check wether the pixel is the local maximum in that direction, in case it is not the local maximum the pixel is suppressed (set to zero).
+4. **Double Thresholding (Edge Classification):** After non-maximum suppression the gradient magnitudes are thresholded into three categories:
+    - **Strong edges:** Pixels with gradient magnitudes above a high threshold are considered strong edges.
+    - **Weak edges:** Pixel with gradient magnitudes between high and low tresholds are considered weak edges.
+    - **Non-edges:** Pixels with gradient magnitudes below the low threshold are discarded.
+The high and low tresholds are typically set as a percentage of the maximum gradient value in the image.
+5. **Edge Tracking:** The final step is to link weak edges to strong edges based on their proximity. For each weak edge pixel, check if it connected to any strong edge pixels. If a weak edge pixel has at least one strong edge pixel as neighbor, it is kept as part of the edge. if a weak edge pixel is not connected to any strong edge pixel, it is discarded. It ensures that weak edges which are part of the actual object boundary are connected and included in the final edge map.
 
 ## The Hough-transform
