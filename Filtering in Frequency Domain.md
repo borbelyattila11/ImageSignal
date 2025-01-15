@@ -16,8 +16,13 @@ Shows how different spatial frequencies contribute to an image. For a 2D image t
 - **Spectrum:** Refers to the magnitudes of the frequency components, it represents how much of a particular frequency is present in the image (Describes how the energy of an image is distributed across different frequencies).
 - **Phase:** Contains information about the position of structures (like edges and textures) in the spatial domain. The phase tells where that frequency occurs in the image.
 
-While the magnitude of a frequency component (spectrum) describes 
+While the magnitude of a frequency component (spectrum) describes how strong a certain frequency is, the phase tells where that frequency occurs in the image.
 
 ## Which type of noise can be detected, filtered?
+
+1. **Gaussian Noise:** Often appears as random fluctuations, typically present across all frequencies, but more prominent to high-frequencies.
+2. **Salt-Pepper Noise:** Usually concentrated in the higher frequencies and can be filtered using low-pass filters.
+3. **Poisson Noise:** Happens particularly in low-light conditions, requires specialized frequency domain techniques.
+4. **Periodic Noise:** Appears in a regular, repeating pattern, can be detected as spikes at specific frequencies and can be removed by filtering out those frequencies.
 
 ## Applications
