@@ -4,7 +4,7 @@
 Algorithm for compressing still images, it is lossy compression method, some of the data is discarded to reduce file size.
 
 ## Human Vision Sensitivity
-The human eye is much more sensitive to variants in **brightness** than variations in **color**. JPEG uses this property. 
+The human vision is more sensitive to low-frequency details (smooth regions and gradual changes) than to high-frequency details (sharp edges, textures or noise). JPEG uses this behavior, since the image's energy is concentrated in the low-frequency components making it possible to compress the high-frequency ones more aggressively.
 
 ## JPEG Algorithm
 - Compression efficiency: reduces file size
