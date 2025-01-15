@@ -30,6 +30,9 @@ The psychoacoustic model is central to lossy audio compression and leverages the
 Humans can only hear sounds within a frequency range of about [20Hz, 20kHZ], sounds below the hearing threshold are inaudible and can be discarded.
 
 ### Frequency Masking
+Louder sounds in a particular frequency range can make softer sounds in nearby frequencies inaudible to the human ear. So Frequency Masking modifies or enhances certain aspects of an audio signal by selectively manipulating its frequency components. Involves blocking or attenuating specific frequency ranges in the signal, effectively "masking" parts of the audio spectrum.
+
+So the audio signal is converted from time domain to the frequency domain using Fourier Transform (Short-Time Fourier Transform), because in the time domain the sound is represented as a waveform, making it difficult to isolate specific frequency components. In the frequency domain based on the psychoacoustic models we can mask out or suppress given frequencies making inaudible or less important.
 
 ### Temporal Masking
 
