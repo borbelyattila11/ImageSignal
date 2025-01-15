@@ -46,3 +46,6 @@ After quantization, the DCT coefficients are reordered using **zig-zag scanning*
 The DCT compacts most of the energy of the image into the **low-frequency** components, which are located in the top-left corner of the DCT matrix. The **high-frequency** components are located in the bottom-right corner, typically contain much less energy and often become zero after quantization.
 
 By zig-zag ordering the coefficients the most important and non-zero values are placed first in teh sequence. This increases the efficiency of the entropy coding, because the long runs of zeros are grouped together at the end, making them easier to compress using run-length encoding (RLE).
+
+## Notes:
+- **4:2:0 subsampling ratio:** The 4:2:0 chroma subsampling ratio is widely used in image and video compression because it effectively reduces data size while maintaining good visual quality.
