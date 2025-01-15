@@ -48,4 +48,16 @@ The DCT compacts most of the energy of the image into the **low-frequency** comp
 By zig-zag ordering the coefficients the most important and non-zero values are placed first in teh sequence. This increases the efficiency of the entropy coding, because the long runs of zeros are grouped together at the end, making them easier to compress using run-length encoding (RLE).
 
 ## Notes:
-- **4:2:0 subsampling ratio:** The 4:2:0 chroma subsampling ratio is widely used in image and video compression because it effectively reduces data size while maintaining good visual quality.
+- **4:2:0 subsampling ratio:** The 4:2:0 chroma subsampling ratio is widely used in image and video compression because it effectively reduces data size while maintaining good visual quality. For every 4 luminance samples there are 2 chrominance samples in the horizontal direction and no additional samples in the vertical direction for the same block.
+
+Luminance:
+Y  Y  Y  Y          Y  Y  Y  Y
+Y  Y  Y  Y    =>    Y  Y  Y  Y
+Y  Y  Y  Y    =>    Y  Y  Y  Y
+Y  Y  Y  Y          Y  Y  Y  Y
+
+Chrominance:
+Cb Cb Cb Cb         Cb      Cb
+Cb Cb Cb Cb    =>        Cb
+Cb Cb Cb Cb    =>    
+Cb Cb Cb Cb
