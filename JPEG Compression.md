@@ -49,15 +49,3 @@ By zig-zag ordering the coefficients the most important and non-zero values are 
 
 ## Notes:
 - **4:2:0 subsampling ratio:** The 4:2:0 chroma subsampling ratio is widely used in image and video compression because it effectively reduces data size while maintaining good visual quality. For every 4 luminance samples there are 2 chrominance samples in the horizontal direction and no additional samples in the vertical direction for the same block.
-
-Luminance:
-Y  Y  Y  Y          Y  Y  Y  Y
-Y  Y  Y  Y    =>    Y  Y  Y  Y
-Y  Y  Y  Y    =>    Y  Y  Y  Y
-Y  Y  Y  Y          Y  Y  Y  Y
-
-Chrominance:
-Cb Cb Cb Cb         Cb      Cb
-Cb Cb Cb Cb    =>        Cb
-Cb Cb Cb Cb    =>    
-Cb Cb Cb Cb
