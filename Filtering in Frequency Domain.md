@@ -26,3 +26,7 @@ While the magnitude of a frequency component (spectrum) describes how strong a c
 4. **Periodic Noise:** Appears in a regular, repeating pattern, can be detected as spikes at specific frequencies and can be removed by filtering out those frequencies.
 
 ## Applications
+- **Noise Reduction:** Filtering high-frequency noise using low-pass filteres or removing periodic noise using band-stop filters.
+- **Image Enhancement:** Emphasizing certain frequencies to enhance freatures like edges.
+- **Compression:** By discarding high-frequency components, which often represent noise or finer details, image compression algorithms can reduce file size.
+- **Edge Detection:** High-pass filtering can be used to enhance edges in an image, useful in object detection and analysis.
