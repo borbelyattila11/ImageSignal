@@ -21,7 +21,7 @@ Sound is a physical phenomenon that involves the propagation of mechanical waves
 - **Speed:** The speed at which sound waves travel depends on the medium, like sound travels faster in water than in air.
 
 ### Human Perception of Sound
-When sound waves reach the ear, they cause vibrations in the eardrum, which are transmitted to inner ear and converted to electrical signals. These signals are interpreted by the brain as different sounds. The human eaer can generally hear sounds in the frequency range of 20Hz to 20kHz (this range decreases with age).
+When sound waves reach the ear, they cause vibrations in the eardrum, which are transmitted to inner ear and converted to electrical signals. These signals are interpreted by the brain as different sounds. The human eaer can generally hear sounds in the frequency range of 16-20Hz to 20-22kHz (this range decreases with age).
 
 ## The Psyhoacoustic Model
 The psychoacoustic model is central to lossy audio compression and leverages the limitations of human hearing to remove audio data that is less perceptible.
