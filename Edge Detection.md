@@ -51,3 +51,14 @@ Designed to identify significant edges, preserve them well and eliminate noise t
 5. **Edge Tracking:** The final step is to link weak edges to strong edges based on their proximity. For each weak edge pixel, check if it connected to any strong edge pixels. If a weak edge pixel has at least one strong edge pixel as neighbor, it is kept as part of the edge. if a weak edge pixel is not connected to any strong edge pixel, it is discarded. It ensures that weak edges which are part of the actual object boundary are connected and included in the final edge map.
 
 ## The Hough-transform
+The Hough Transform is primarly used for detecting geometrical shapes (lines, circles, complex shapes) and parametric curves. The method works by converting points in image space to a parameter space, where the shapes become more easily detectable.
+
+### Mathematical Representation
+In the traditional Cartesian coordinates a line can be represented as: *y = mx + b* where *m* is the slope and *b* is the intercept.
+Points on the same line in image domain will be mapped to lines in the Hough domain. The Hough space is discretized into a 2D array called accumulator.
+
+**Point defined in Image Space:** y = mx + b
+**Point defined in Parameter Space:** b = -xm + y
+
+More points that on same line tends to more lines in Hough domain and that will increase voting to the intersection point indicating there is many points belongs to line in image domain with that slope and intercept. To avoid this issue the **polar coordinate** system is used in the Hough Transform where the line is represented as: *r = x cos(θ) + y sin(θ)* where *r* is the perpendicular distance from the origin to the line and *θ* is the angle of the line.
+
