@@ -35,6 +35,21 @@ Louder sounds in a particular frequency range can make softer sounds in nearby f
 So the audio signal is converted from time domain to the frequency domain using Fourier Transform (Short-Time Fourier Transform), because in the time domain the sound is represented as a waveform, making it difficult to isolate specific frequency components. In the frequency domain based on the psychoacoustic models we can mask out or suppress given frequencies making inaudible or less important.
 
 ### Temporal Masking
+Exploits the psychoacoustic phenomenon where sounds are temporarly masked by other sounds occuring closely in time.
+
+Temporal masking refers to the phenomenon where:
+1. **Pre-Masking:** A quiet sound becomes inaudible if it occurs just before a louder sound.
+2. **Post-Masking:** A quiet sound becomes inaudible if it occurs shortly after a louder sound.
+
+Convert the signal from time domain to frequency domain (using FT), detect regions with high energy concentration, as these are potential "maskers" that will suppress nearby quiet sounds. Also define a threshold for what qualifies as a loud sound, based on amplitude or energy levels.
+
+### Masking Windows
+Refers to the time intervals before and after a louder sound during which quieter sounds are masked.
+
+- **Pre-Masking Window:** The time interval before the masker, takes very short, around 5-20ms. During this period any preciding quieter sound is not fully processed and becomes inaudible.
+- **Post-Masking Window:** The time interval after the masker, typically 50-200ms. After hearing a loud sound, auditory system continues processing it for a while, during which quieter sounds are overshadowed and remain inaudible.
+
+In **Audio Compression** masking windows are used to identify and remove inaudible sound components in formats like MP3 and AAC.
 
 ### The Bark Scale and Critical Bands
 
