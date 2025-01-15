@@ -34,7 +34,7 @@ Combines Gaussian smoothing with the Laplacian operator. First it applies the Ga
 The algorithm's goal is to detect the **zero-crossings** of the LoG, which corresponds to the locations of edges in an image. First step of the algorithm is to apply LoG on the image. In addition to applying the LoG operator it focuses on detecting zero-crossings. May produce false edges.
 
 ## The Canny
-Designed to identify significant edges, preserve them well and eliminate noise that might interfere with the edge detection process.
+Designed to identify significant edges, preserve them well and eliminate noise that might interfere with the edge detection process. The output is a binary image where the edges of objects in the original image are highlighted (Edge pixels are marked as white and Non-edge pixels are marked as black).
 
 ### Steps
 1. **Noise Reduction (Gaussian filtering):** Apply Gaussian smoothing to reduce noise and fine details. The image is convolved with a Gaussian kernel to blur the image. The amount of smoothing is controlled by the standard deviation (σ) of the Gaussian kernel.
