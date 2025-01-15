@@ -14,16 +14,37 @@ Spatial filtering involves processing an image by manipulating the pixel values 
 ## Image Sharpening (Gradient, Laplace operator)
 Image sharpening is a technique used to enhance the details and edges in an image. Uses operators like Gradient and Laplacian to highlight changes in intensity, which can sharpen the image.
 
-### Gradient-based Sharpening:
+### Gradient-based Sharpening
 The gradient of an image represents the rate of change of pixel intensities, and it is often used to detect edges in an image. The gradient is computed using convolution with kernels like the **Sobel** or **Prewitt** operators.
 
 **Sobel Operator:** Computes the gradient in the horizontal and vertical directions.
 
 For sharpening, we focus on the high-frequency components (edges), so a simple approach is to subtract the smoothed version of the image (Gaussian blur) from the original image to enhance the edges.
 
-$I_{sharpened} = I + \alpha \cdot \nabla I$
+$I_{sharpened} = I - \alpha \cdot \nabla I$
 
 where:
 - $I$ is the original image
 - $\alpha$ is a scalar to control the sharpening strength
 - $\nabla I$ is the gradient (magnitude)
+
+### Laplacian-based Sharpening
+The Laplacian is a second-order derivative operator that highlights regions of rapid intensity change (edge and noise).
+
+**Laplacian Operator:** Highlights areas with high-frequency content (edges), for sharpening we can subtract the Laplacian of an image from the original image to enhance edges.
+
+$I_{sharpened} = I - \alpha \cdot \nabla I$
+
+where:
+- $I$ is the original image
+- $\alpha$ is a scalar to control the sharpening strength
+- $\nabla I$ is the Laplacian of the image
+
+Alternatively, we can add the Laplacian result to the original image to sharpen it:
+
+$I_{sharpened} = I + \alpha \cdot \nabla I$
+
+## Applications
+- Edge Detection
+- Image Enhancement
+- Image Compression
