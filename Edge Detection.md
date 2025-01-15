@@ -29,3 +29,10 @@ Noise it typically present in images and can interfere with edge detection. To m
 Combines Gaussian smoothing with the Laplacian operator. First it applies the Gaussian filter to smooth the image, which reduces noise and avoid false edge detection. In the Gaussian filter the **σ** is the standard deviation that controls the level of smoothing. Second the Laplacian operator to detect edges based on changes in intensity, resulting in zero-crossing in the second derivative. This method is more effective than just using the Laplacian itself.
 
 **Zero-crossing** refers to a point where the value of the second derivative of a function changes sign.
+
+## The Marr-Hildreth
+The algorithm's goal is to detect the **zero-crossings** of the LoG, which corresponds to the locations of edges in an image. First step of the algorithm is to apply LoG on the image. In addition to applying the LoG operator it focuses on detecting zero-crossings. May produce false edges.
+
+## The Canny
+
+## The Hough-transform
