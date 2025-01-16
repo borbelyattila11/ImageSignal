@@ -41,3 +41,9 @@ Where:
 - $a[l]$ feedback coefficients
 - $M$ is the number of feedforward coefficients
 - $L$ is the number of feedback coefficients
+
+## Stable filters in the view of the Transfer function
+**Stability** of a filter in terms of its transfer function means that the system's output remains bounded for any bounded input. A discrete-time filter is **stable** if the poles of its transfer function lie within the unit circle in the z-plane (|z| < 1). For an IIR filter, the location of the poles determines the stability, FIR filters are always stable because their transfer functions do not have poles.
+
+## Realizable Filtesr in the view of the Transfer function
+A **realizable filter** is a filter that can be implemented using real, physical components. For a filter to be realizable, its transfer function must be **causal** and **stable**. In practice, both FIR and IIR filters are realizable, but IIR filters require careful design to ensure that they meet these conditions.
