@@ -16,7 +16,7 @@ In telecommunications **logarithmic quantization** is commonly implemented using
 - **Expansion:** Restores the signal to its original amplitude range on the receiver side.
 
 #### μ-law Companding
-Where μ is a parameter that determines the amount of compression.
+Where μ is a parameter that determines the amount of compression and x is the normalized signal amplitude (-1 <= x <= 1).
 
 $F(x) = \text{sign}(x) \cdot \frac{\ln(1 + \mu|x|)}{\ln(1 + \mu)}$
 
