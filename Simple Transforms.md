@@ -30,5 +30,19 @@ Point transforms operate on each pixel independently.
 - **Gamma Correction:** Adjust the contrast for images with non-linear intensity distributions. $I'(x, y) = c * I(x, y)^γ$
 - **Logarithmic Transform:** Enhance low-intensity values. $I'(x, y) = c * log(1 + I(x, y))$
 - **Exponential Transform:** Enhance high-intensity values. $I'(x, y) = c * (e^{I(x, y)} - 1)$
-  
+
+#### Spatial Transforms:
+- **Smoothing (Low-Pass Filtering):** Reduces noise by averaging the intensities in a neighborhood
+- **Edge Detection (High-Pass Filtering):** Emphasizes intensity changes (edges)
+
 ## Histogram equalization
+Adjust the image intensities (redistribute) to achieve a more uniform histogram, enhancing contrast. This makes details in an image more visible, especially when the image has low contrast.
+
+The goal is to map the original intensity levels of the image to new levels such that the histogram of the output image is approximately uniform.
+
+#### Steps:
+1. **Calculate the Histogram:** Compute the frequency distribution of pixel intensity values in the image. (L = 256 for a 8bit image)
+2. **Normalize the Histogram:** Divide the histogram values by the total number of pixels $N$ to obtain the probability distribution.
+3. **Compute the Cumulative Distribution Function (CDF):** The CDF represents the cumulative probability up to a given intensity level.
+4. **Map intensity levels:** Map each pixel intensity $r_k$ to a new intensity $s_k$ using the CDF.
+5. **Create the Equalized Image:** Replace each pixel in the original image with its corresponding equalized intensity value $s_k$.
