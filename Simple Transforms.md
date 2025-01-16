@@ -13,7 +13,7 @@ Estimates a new pixel value using the distance-weighted average of the four clos
 Frequently used in scaling, rotation and other affine transformations.
 
 ## Bicubic Interpolation
-Extends bilinear interpolation by considering the values of the 16 nearest pixels (4x4 grid) to estimate the pixel value. It involves cubic polynomials in both horizontal and vertical dimensions.
+The bicubic interpolation involves a weighted average of the 16 nearest neighbors (4x4 grid) for each pixel. It uses cubic polynomials for interpolation in both the x and y directions.
 
 Produces smoother and more visually appealing results compared to bilinear interpolation. More computationally expensive and may introduce ringing artifacts near sharp transitions (edges)
 
