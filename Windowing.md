@@ -6,4 +6,4 @@ Windowing is crucial when dealing with finite-length signals or signals with dis
 ## Definition of Window Functions
 Mathematical function applied to a segment of a signal to smooth or taper it. The window reduces the abrupt transitions at the edges of a finite signal, limiting high-frequency noise and improving the frequency-domain representation of the signal.
 
-$f_{windowed} = f(t) \dot h(t)$ or $f_{windowed} = f[n] \dot h[n]$
+$f_{windowed} = f(t) • h(t)$ or $f_{windowed} = f[n] • h[n]$
