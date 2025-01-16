@@ -18,5 +18,17 @@ Extends bilinear interpolation by considering the values of the 16 nearest pixel
 Produces smoother and more visually appealing results compared to bilinear interpolation. More computationally expensive and may introduce ringing artifacts near sharp transitions (edges)
 
 ## Transforms of the intensity function
+The intensity function refers to the grayscale level or brightness of pixels in an image. It represents the magnitude of light (brightness) at each pixel and is typically denoted as $I(x, y)$.
+
+For grayscale images $I(x, y)$ is typically a scalar value in a range, such as [0, 255] for 8-bit images. In color images, the intensity is often split into three separate components corresponding to the red, green and blue (RGB) channels.
+
+Intensity transformations involve modifying the pixel values of the image to achieve a desired effect.
+
+#### Point Transforms:
+Point transforms operate on each pixel independently.
+- **Linear Transformation:** Brightness adjustment (via b) and contrast scaling (via a).
+  $I'(x, y) = a * I(x, y) + b$
+- **Gamma Correction:** $I'(x, y) = c * I(x, y)^γ$
+  
 
 ## Histogram equalization
