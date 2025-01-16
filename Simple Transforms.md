@@ -26,9 +26,9 @@ Intensity transformations involve modifying the pixel values of the image to ach
 
 #### Point Transforms:
 Point transforms operate on each pixel independently.
-- **Linear Transformation:** Brightness adjustment (via b) and contrast scaling (via a).
-$I'(x, y) = a * I(x, y) + b$
-- **Gamma Correction:** $I'(x, y) = c * I(x, y)^γ$
+- **Linear Transformation:** Brightness adjustment (via b) and contrast scaling (via a). $I'(x, y) = a * I(x, y) + b$
+- **Gamma Correction:** Adjust the contrast for images with non-linear intensity distributions. $I'(x, y) = c * I(x, y)^γ$
+- **Logarithmic Transform:** Enhance low-intensity values. $I'(x, y) = c * log(1 + I(x, y))$
+- **Exponential Transform:** Enhance high-intensity values. $I'(x, y) = c * (e^{I(x, y)} - 1)$
   
-
 ## Histogram equalization
