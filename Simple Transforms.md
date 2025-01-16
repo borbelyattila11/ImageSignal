@@ -8,6 +8,8 @@ When applied to an image, each pixel is repositioned and new pixel values are co
 ## Bilinear Interpolation
 Estimates the value of a pixel at a non-integer position by linearly inteprolating along two dimensions. It uses the nearest 2x2 pixel grid surrounding the target position.
 
+Estimates a new pixel value using the distance-weighted average of the four closest pixels.
+
 Frequently used in scaling, rotation and other affine transformations.
 
 ## Bicubic Interpolation
