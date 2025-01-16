@@ -20,3 +20,24 @@ Where:
 - $x[n-k]$ is the input signal delayed by $k$ samples
 - $h[k]$ are the filter coefficients (impulse response)
 - $M$ is the length of the filter (number of coefficients)
+
+## IIF (Infinite Impulse Response)
+The output depends not only on the current and past input samples but also on past output samples. The impulse response of these filters doesn't settle to zero but continues indefinitely due to the feedback mechanism.
+
+#### Characteristics:
+1. **Feedback:** They use feedback, meaning the past outputs are fed back into the filter to influence the current output.
+2. **Stability:** Stability depends on the placement of poles in the filter's transfer function. Can become unstable if not properly designed.
+3. **Efficiency:** Achieve a desired frequency response using fewer coefficients than FIR filters.
+4. **Phase:** Typically do not have linear phase, which can cause phase distortion.
+
+The relationship between the input $x[n]$ and output $y[n]$ of an IIR filter is governed by the following difference equation:
+
+y[n] = \sum_{k=0}^{M-1} b[k]x[n-k] - \sum_{l=1}^{L-1} a[l]y[n-l]
+
+Where:
+- $y[n]$ is the output signal at time $n$
+- $x[n-k]$ is the input signal delayed by $k$ samples
+- $[k]$ feedforward coefficients
+- $a[l]$ feedback coefficients
+- $M$ is the number of feedforward coefficients
+- $L$ is the number of feedback coefficients
