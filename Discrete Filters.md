@@ -47,3 +47,6 @@ Where:
 
 ## Realizable Filtesr in the view of the Transfer function
 A **realizable filter** is a filter that can be implemented using real, physical components. For a filter to be realizable, its transfer function must be **causal** and **stable**. In practice, both FIR and IIR filters are realizable, but IIR filters require careful design to ensure that they meet these conditions.
+
+## Notes:
+- **Poles:** Poles are the values of $z$ that makes the denominator $A(z) = 0$, causing the transfer function $H(z)$ to approach infinity. Poles represent the frequencies at which the system's response becomes theoretically infinite.
