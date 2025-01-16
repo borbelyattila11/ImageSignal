@@ -18,5 +18,12 @@ A Resistor-Capacitor (RC) filter is one of the simplest analog filter, it uses a
 The transfer function of a filter defines the relationship between the output and input signals in the frequency domain. Usually expressed as a ratio of polynomials.
 
 ## Stable Filters in view of the Transfer Function
+For a filter to be stable, the poles of its transfer function must lie in the left half of the complex $s$-plane. This means the system's impulse response must decay to zero over time.
 
 ## Realizable Filters in view of the Transfer Function
+A realizable filter is one whose transfer function corresponds to a physical, causal system and all of their poles and zeros inside the unit circle in the complex plane.
+
+## Notes:
+- **Poles:** The poles of a system correspond to the roots of the denominator in the transfer function $H(s)$.
+  $H(s) = \frac{N(s)}{D(s)}$
+  Where $N(s)$ is the numerator polynomial and $D(s)$ is the denominator polynomial
