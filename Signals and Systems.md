@@ -1,5 +1,5 @@
 # Signals
-Signals are typically used to transmit information and can be either continous or discrete. 
+Signals are typically used to transmit information and can be either continous or discrete. A signal is a function that maps one or more independent variables (time) to a set of dependent variables. $s(t)$ or $s(t, x, y)$
 
 #### Characteristics of Signals
 - **Amplitude:** The magnitude of the signal at any point.
