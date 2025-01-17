@@ -40,3 +40,13 @@ A system processes input signals to produce output signals. The space of input s
 2. **Time-Invariant Systems:** A system is time-invariant if its behavior and characteristics do not change over time. In simpler terms, shifting or delaying the input to the system results in an equivalent shift or delay in the output.
 3. **Realizable Systems:** A system is realizable if it can be physically implemented, must have a causal structure, where the output depends only on the current and past inputs, not future inputs.
 4. **Stable Systems:** A system is stable if bounded input signals always produce bounded output signals (BIBO stability).
+
+#### Convergence
+Convergence describes how a sequence of signals or system outputs approaches a fixed value or behavior over time.
+
+#### Metric and Normed spaces
+1. **Metric Spaces:** The Euclidean distance between two finite-length discrete signals $x[n]$ and $y[n]$.
+2. **Normed Space:** Define a "size" or "magnitude" of a signal using a norm $||x||$.
+   - **Infinity Norm:** Measures the maximum absolute value of a signal. Useful for worst-case analysis.
+   - **L1 Norm:** Measures the total absolute "energy" of a signal.
+   - **L2 Norm:** Measures the root mean square energy. Widely used in Fourier analysis and energy computations.
