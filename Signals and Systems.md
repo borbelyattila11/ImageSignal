@@ -36,6 +36,7 @@ Examples:
 A system processes input signals to produce output signals. The space of input signals $(X)$ and the space of output signals $(Y)$ are linear spaces.
 
 1. **Linear Systems:** A system is linear if it satisfies the principles of superposition (additivity and homogeneity)
+  $A(αx + βy) = αA(x) + βA(y)$
 2. **Time-Invariant Systems:** A system is time-invariant if its behavior and characteristics do not change over time. In simpler terms, shifting or delaying the input to the system results in an equivalent shift or delay in the output.
 3. **Realizable Systems:** A system is realizable if it can be physically implemented, must have a causal structure, where the output depends only on the current and past inputs, not future inputs.
 4. **Stable Systems:** A system is stable if bounded input signals always produce bounded output signals (BIBO stability).
