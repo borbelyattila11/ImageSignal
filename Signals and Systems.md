@@ -22,7 +22,7 @@ Examples:
 Discrete signals are defined only at specific time intervals, with values at discrete points. They are discrete in time and continous in amplitude.
 
 Examples:
-- Unit Impulse Signal (Discrete) $x[n] = 1 if n = 0, 0$
+- Unit Impulse Signal (Discrete) $x[n] = 1$ if $n = 0, 0$
 
 ## Digital Signals
 Digital signals are discrete in both time and amplitude, typically represented as binary values (0 and 1).
