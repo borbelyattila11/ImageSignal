@@ -37,7 +37,7 @@ $y[n] = \sum_{k=0}^{M-1} b[k]x[n-k] - \sum_{l=1}^{L-1} a[l]y[n-l]$
 Where:
 - $y[n]$ is the output signal at time $n$
 - $x[n-k]$ is the input signal delayed by $k$ samples
-- $[k]$ feedforward coefficients
+- $b[k]$ feedforward coefficients
 - $a[l]$ feedback coefficients
 - $M$ is the number of feedforward coefficients
 - $L$ is the number of feedback coefficients
