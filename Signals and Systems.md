@@ -22,8 +22,7 @@ Examples:
 Discrete signals are defined only at specific time intervals, with values at discrete points. They are discrete in time and continous in amplitude.
 
 Examples:
-- Daily Stock prices
-- Digital Clock
+- Unit Impulse Signal
 
 ## Digital Signals
 Digital signals are discrete in both time and amplitude, typically represented as binary values (0 and 1).
