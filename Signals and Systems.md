@@ -11,9 +11,9 @@ Signals are typically used to transmit information and can be either continous o
 Analog signals are conitnous in both time and amplitude, they can take any value within a given range and are represented as a smooth wave.
 
 Examples:
-- Human voice
-- Voltage in electrical circuit
-- Temperature
+- Heavyside function
+- Rectangle function
+- Dirac-delta (unit impulse)
 
 ## Discrete Signals
 Discrete signals are defined only at specific time intervals, with values at discrete points. They are discrete in time and continous in amplitude.
