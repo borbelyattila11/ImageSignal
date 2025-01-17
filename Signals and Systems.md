@@ -33,7 +33,7 @@ Examples:
 - Images in digital format
 
 # Systems
-A system processes input signals to produce output signals. The space of input signals $(X)$ and the space of output signals $(Y)$ are linear spaces.
+A system processes input signals to produce output signals. The space of input signals $(X)$ and the space of output signals $(Y)$ are linear spaces. For a linear, time-invariant system the complex exponentials are eigenfunctions.
 
 1. **Linear Systems:** A system is linear if it satisfies the principles of superposition (additivity and homogeneity)
   $A(αx + βy) = αA(x) + βA(y)$
