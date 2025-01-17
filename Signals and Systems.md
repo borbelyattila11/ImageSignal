@@ -1,5 +1,11 @@
 # Signals
-Signals are typically used to transmit information and can be either continous or discrete.
+Signals are typically used to transmit information and can be either continous or discrete. 
+
+#### Characteristics of Signals
+- **Amplitude:** The magnitude of the signal at any point.
+- **Frequency:** How often the signal oscillates or repeats within a given time.
+- **Phase:** The relative position of the waveform with respect to time.
+- **Energy and Power:** Measures of the strength or intensity of the signal.
 
 ## Analog Signals
 Analog signals are conitnous in both time and amplitude, they can take any value within a given range and are represented as a smooth wave.
