@@ -14,6 +14,9 @@ Examples:
 - Heavyside function
 - Rectangle function
 - Dirac-delta (unit impulse)
+- Sinc
+- Sinus (monochormatic)
+- Complex Trigonometric
 
 ## Discrete Signals
 Discrete signals are defined only at specific time intervals, with values at discrete points. They are discrete in time and continous in amplitude.
