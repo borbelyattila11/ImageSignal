@@ -32,7 +32,7 @@ The output depends not only on the current and past input samples but also on pa
 
 The relationship between the input $x[n]$ and output $y[n]$ of an IIR filter is governed by the following difference equation:
 
-y[n] = \sum_{k=0}^{M-1} b[k]x[n-k] - \sum_{l=1}^{L-1} a[l]y[n-l]
+$y[n] = \sum_{k=0}^{M-1} b[k]x[n-k] - \sum_{l=1}^{L-1} a[l]y[n-l]$
 
 Where:
 - $y[n]$ is the output signal at time $n$
