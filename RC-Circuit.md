@@ -17,3 +17,5 @@ An RC Circuit (Resistor-Capacitor circuit) is an analog circuit consisting of a 
      $f_c = \frac{1}{2πRC}$
 
 The RC Circuit acts as an analog filter that modifies the amplitude and phase of input signals based on their frequency. It performs continous-time signal filtering.
+
+THe difference equation bridges the gap between analog filtering (RC Circuits) and digital signal processing by providing a mathematical structure that models the behavior of discrete-time systems.
