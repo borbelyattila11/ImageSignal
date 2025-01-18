@@ -10,6 +10,8 @@ When a continous signal is sampled the process introduces aliasing (which means 
 ## Aliasing
 Occurs when a signal is undersampled and higher-frequency components of the signal are incorrectly mapped to lower frequencies. This results in a distortion of the signal, which can be avoided by ensuring the sampling rate is suefficiently high (oversampled).
 
+- **Rate of Distortion:** How much the reconstructed signal differs from the original continous-time signal due to aliasing effects. This distortion occurs when a signal is sampled below the Nyquist rate and high-frequency components in the original signal "fold" back into lower-frequencies in the sampled signal.
+
 ## The Nyquist Frequency
 The Nyquist Frequency is the highest frequency that can be accurately sampled without aliasing, it is equal to half of the sampling rate. To avoid aliasing the sampling rate must be at least twice the highest frequency present in the signal.
 
