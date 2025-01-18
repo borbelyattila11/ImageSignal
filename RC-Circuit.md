@@ -10,3 +10,5 @@ An RC Circuit (Resistor-Capacitor circuit) is an analog circuit consisting of a 
 3. **Cutoff Frequency:** The frequency at which the signal's power drops to half of its passband value.
    - Defined as:
      $f_c = \frac{1}{2πRC}$
+
+The RC Circuit acts as an analog filter that modifies the amplitude and phase of input signals based on their frequency. It performs continous-time signal filtering.
