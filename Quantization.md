@@ -31,4 +31,4 @@ JPEG uses quantization in its lossy compression pipeline:
 3. **Entropy Coding:** The quantized coefficients are encoded using Huffman coding or RLE.
 
 ## Notes:
-- **Decibel:** Apply ß10log_10(x)$ on the quantized value (x) to get how many decibels the value would be.
+- **Decibel:** Apply $10log_10(x)$ on the quantized value (x) to get how many decibels the value would be.
