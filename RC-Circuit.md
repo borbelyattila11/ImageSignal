@@ -8,6 +8,7 @@ An RC Circuit (Resistor-Capacitor circuit) is an analog circuit consisting of a 
 - $x(t)$ is the input voltage (in volts, V)
 
 **Differential Equation:** $RCv'(t) + v(t) = x(t)$
+- $s$ is the exponential
 
 **Transfer Function:** $H(s) = \frac{V_{out}(s)}{V_{in}(s)}$
 
