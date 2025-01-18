@@ -7,7 +7,7 @@ An RC Circuit (Resistor-Capacitor circuit) is an analog circuit consisting of a 
 - $v(t)$ is the output voltage (in volts, V)
 - $x(t)$ is the input voltage (in volts, V)
 
-**Transfer Function:** $H(s) = \frac{V_out(s)}{V_in(s)}$
+**Transfer Function:** $H(s) = \frac{V_{out}(s)}{V_{in}(s)}$
 
 1. **Low-Pass RC Circuit:** Allows low-frequency signals to pass through attenuating higher frequencies.
    - Transfer Function:
