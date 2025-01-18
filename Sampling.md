@@ -5,7 +5,7 @@ Process of converting continous analog signals into discrete digital signals, in
 Refers to sampling at equally spaced time intervals, most common form of sampling used in signal processing, where each sample is taken at the same time gap.
 
 ## The Effect of Sampling in the Frequency Domain
-Sampling a signal in the time domain (convolution) affects its representation in the frequency domain (multiplication). When a continous-time signal is sampled, its frequency-domain representation undergoes periodic replication, leading to potention overlap (aliasing).
+Sampling in the frequency domain results in the periodic repetition of the signal's spectrum at multiples of the sampling frequency, causing overlapping or "folding" of higher frequencies into lower ones. This repetition occurs due to the convolution of the original spectrum with a series of spikes from the Dirac comb. The Dirac comb is used to model periodic sampling, as it picks out values of a signal at regular time intervals.
 
 ## Aliasing
 Occurs when a signal is undersampled and higher-frequency components of the signal are incorrectly mapped to lower frequencies. This results in a distortion of the signal, which can be avoided by ensuring the sampling rate is suefficiently high (oversampled).
