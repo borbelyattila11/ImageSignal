@@ -5,7 +5,7 @@ Process of converting continous analog signals into discrete digital signals, in
 Refers to sampling at equally spaced time intervals, most common form of sampling used in signal processing, where each sample is taken at the same time gap.
 
 ## The Effect of Sampling in the Frequency Domain
-When a continous signal is sampled the process introduces aliasing (which means the signal is undersampled), where higher frequency components of the signal appear "mirrored" and "folded" into the lower frequency range of the sampled signal. Aliasing is the presence of unwanted components in the reconstructed signal, these components were not present when the original signal was sampled. It occurs because signal frequencies can overlap if the sampling frequency is too low, frequencies wil "fold" around half the sampling frequency.
+Sampling a signal in the time domain (convolution) affects its representation in the frequency domain (multiplication). When a continous-time signal is sampled, its frequency-domain representation undergoes periodic replication, leading to potention overlap (aliasing).
 
 ## Aliasing
 Occurs when a signal is undersampled and higher-frequency components of the signal are incorrectly mapped to lower frequencies. This results in a distortion of the signal, which can be avoided by ensuring the sampling rate is suefficiently high (oversampled).
