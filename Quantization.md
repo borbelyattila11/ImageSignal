@@ -29,3 +29,6 @@ JPEG uses quantization in its lossy compression pipeline:
 1. **Transform:** The image is divided into blocks, and a Discrete Cosine Transform is applied.
 2. **Quantization:** DCT coefficients are divided by a quantization matrix (luminance table, chrominance table) and rounded to the nearest integer. High-frequency components are significantly reduced, preserving only visually significant low-frequency information.
 3. **Entropy Coding:** The quantized coefficients are encoded using Huffman coding or RLE.
+
+## Notes:
+- **Decibel:** Apply 10log_10(x) on the quantized value (x) to get how many decibels the value would be.
