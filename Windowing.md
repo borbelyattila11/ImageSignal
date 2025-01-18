@@ -37,6 +37,6 @@ $h[n] = 0.5 \left( 1 - \cos \left( \frac{2\pi n}{N-1} \right) \right)$
 
 #### Properties:
 - **Time Domain:** The window smoothly starts and ends with zero, reducing the signal's discontinuities at the boundaries.
-- **Frequency Domain:** The Hahn window has a narrow main lobe and much smaller side lobes compared to the rectangular window, leading to significantly less spectral leakage.
+- **Frequency Domain:** The Hahn window has a wider main lobe and much smaller side lobes compared to the rectangular window, leading to significantly less spectral leakage.
 - **Spectral Leakage:** The Hahn window reduces leakage even more than the triangular window due to the cosine taper.
 - **Resolution:** The trade-off is that the main lobe is wider than the rectangular window, reducing the ability to distinguish closely spaced frequencies.
