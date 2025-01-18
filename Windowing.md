@@ -31,7 +31,7 @@ A simple window function that starts at 0 and rises to 1 at the center of the wi
 - **Spectral Leakage:** Less spectral leakage compared to the rectangular window.
 
 ## Hahn Window
-A cosine-shaped window that smooths the signal with a sinusoidal taper.
+A cosine-shaped window that smooths the signal with a sinusoidal taper in time domain. In spectrum its shift of sinc function.
 
 $h[n] = 0.5 \left( 1 - \cos \left( \frac{2\pi n}{N-1} \right) \right)$
 
