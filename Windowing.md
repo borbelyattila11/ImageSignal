@@ -27,7 +27,7 @@ A simple window function that starts at 0 and rises to 1 at the center of the wi
 
 #### Properties:
 - **Time Domain:** The signal is tapered smoothly at both ends, reducing the abrupt cut-off.
-- **Frequency Domain:** The triangular window has a main lobe that is narrower than the rectangular window, with reduced side lobes, although the side lobes still exist.
+- **Frequency Domain:** The triangular window has a main lobe that is wider than in case of rectangular window, with reduced side lobes, although the side lobes still exist.
 - **Spectral Leakage:** Less spectral leakage compared to the rectangular window.
 
 ## Hahn Window
