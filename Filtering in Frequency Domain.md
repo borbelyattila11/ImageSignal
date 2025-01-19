@@ -13,7 +13,7 @@ Low-Frequency components are not automatically centered in the output, by defaul
 Shows how different spatial frequencies contribute to an image. For a 2D image the frequency spectrum is often visualized as in intensity map where the center represents the low-frequencies and the edges represent the high-frequencies.
 
 ## Spectrum, Phase (Frequency Components)
-- **Spectrum:** Refers to the magnitudes of the frequency components, it represents how much of a particular frequency is present in the image (Describes how the energy of an image is distributed across different frequencies).
+- **Amplitude:** Refers to the magnitudes of the frequency components, it represents how much of a particular frequency is present in the image (Describes how the energy of an image is distributed across different frequencies).
 - **Phase:** Contains information about the position of structures (like edges and textures) in the spatial domain. The phase tells where that frequency occurs in the image.
 
 While the magnitude of a frequency component (spectrum) describes how strong a certain frequency is, the phase tells where that frequency occurs in the image.
