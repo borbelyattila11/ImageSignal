@@ -2,7 +2,7 @@
 Systems that manipulate continous-time signals in the analog domain. They can be categorized based on the frequency response characteristics and are primarly used to allow or suppress specific frequency ranges of signals.
 
 ## The Ideal Filter
-An ideal filter is theoretical concept that completly passes signals within a certain frequency range (passband) and completely attenuates signals outside of this range (stopband). However, ideal filters do not exist in practice, as they would require infinite bandwidth and non-causal behavior.
+An ideal filter is theoretical concept that completly passes signals within a certain frequency range (passband) and completely blocks signals outside of this range (stopband). However, ideal filters do not exist in practice, as they would require infinite bandwidth and non-causal behavior.
 
 - **Low-Pass Filters** that allow frequencies below a certain cutoff to pass while attenuating higher frequencies.
 - **High-Pass Filters** that allow higher frequencies to pass while attenuating lower frequencies.
