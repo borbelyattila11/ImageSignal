@@ -5,6 +5,9 @@ Rotation transforms an image or signal by turning it around a foxed point, usual
 
 When applied to an image, each pixel is repositioned and new pixel values are computed at non-integer coordinates using interpolation methods like bilinear or bicubic interpolation. Rotation often introduces artifacts such as aliasing or jagged edges, especially for high-frequency content.
 
+1. **Backward Mapping:** For each pixel in the output image, its corresponding location in the input image is determined using the inverse of the rotation matrix.
+2. **Interpolation:** Since the computed location in the input image is not exact pixel, its value is estimated based on the surrounding pixels.
+
 ## Bilinear Interpolation
 Estimates the value of a pixel at a non-integer position by linearly inteprolating along two dimensions. It uses the nearest 2x2 pixel grid surrounding the target position.
 
